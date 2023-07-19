@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYT - Math |</title> <!-- Назва -->
+    <link rel="icon" href="logo.png" type="image/png"> <!-- логотип -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .background-image {
+            background-image: url("mathback.jpg");
+            background-size: cover;
+            background-repeat: repeat-y;
+            background-position: center;
+            min-height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        header {
+            background-color: #f1f1f1; /* Сірий колір для головної частини */
+            text-align: center;
+            padding: 20px;
+            color: #555; /* Колір тексту */
+            margin-bottom: 20px; /* Додано відступ знизу */
+        }
+
+        header img {
+            max-height: 70px; /* Зменшено розмір логотипу */
+            margin-left: -15px; /* Зміщення логотипу вліво */
+        }
+
+        header h1 {
+            margin: 5px 0 10px; /* Змінено відступи навколо заголовку */
+            font-size: 24px;
+
+        }
+
+        .service-text {
+            font-size: 14px;
+            font-style: italic;
+            color: #777; /* Колір маленького напису сервісу */
+        }
+
+        .content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            background-image: url("mathback.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .content p {
+            line-height: 1.6;
+        }
+
+        .footer {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .footer img {
+            max-height: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #555;
+            font-size: 18px;
+            font-weight: bold;
+            color: #777;
+        }
+
+        .back-link:hover {
+            color: #333;
+        }
+        .teacher {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .teacher img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        .teacher-info {
+            margin-top: 10px;
+            text-align: center;
+            color: #ffffff;
+
+        }
+
+        .contact-form {
+            margin-top: 20px;
+            text-align: center;
+            color: #ffffff;
+
+        }
+
+        .contact-form input[type="tel"] {
+            padding: 5px;
+            width: 200px;
+        }
+        .contact-form {
+            margin-top: 20px;
+            text-align: center;
+            color: #ffffff;
+
+        }
+
+        .contact-form input[type="tel"] {
+            padding: 5px;
+            width: 200px;
+            border: 2px solid #817b7b;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .contact-form input[type="tel"]:focus {
+            border-color: #777;
+        }
+
+        .submit-arrow {
+            cursor: pointer;
+            display: inline-block;
+            margin-left: -5px;
+        }
+
+        .submit-arrow img {
+            max-width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="background-image"></div>
+<a href="main.html" class="back-link">&larr; Повернутися на головну</a>
+<header>
+    <img src="logo.png" alt="FYT - Find Your Teacher">
+    <h1>Математика</h1>
+    <div class="service-text">Репетитори з математики</div>
+</header>
+<div class="content">
+    <!-- Вміст сторінки, як у попередньому прикладі -->
+    <div class="content">
+        <!-- Фотографії та інформація вчителів -->
+        <div class="teacher">
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+
+            <img src="teacher_1.jpg" alt="Вчитель 1">
+            <div class="teacher-info">
+                <p>Вік: 35</p>
+                <p>Досвід роботи: 10 років</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3>Записатися на урок</h3>
+            <form id="contactForm">
+                <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
+                <div class="submit-arrow" onclick="submitForm()">
+                    <img src="arrow.png" alt="Відправити">
+                </div>
+            </form>
+            <h1></h1>
+        </div>
+        <div class="teacher">
+            <img src="teacher_2.jpg" alt="Вчитель 2">
+            <div class="teacher-info">
+                <p>Вік: 40</p>
+                <p>Досвід роботи: 15 років</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Записатися на урок</h3>
+            <form id="contactForm">
+                <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
+                <div class="submit-arrow" onclick="submitForm()">
+                    <img src="arrow.png" alt="Відправити">
+                </div>
+            </form>
+            <h1></h1>
+        </div>
+
+        <div class="teacher">
+            <img src="teacher_3.jpg" alt="Вчитель 3">
+            <div class="teacher-info">
+                <p>Вік: 41</p>
+                <p>Досвід роботи: 11 років</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Заисатися на урок</h3>
+            <form id="contactForm">
+                <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
+                <div class="submit-arrow" onclick="submitForm()">
+                    <img src="arrow.png" alt="Відправити">
+                </div>
+            </form>
+            <h1></h1>
+        </div>
+
+        <div class="teacher">
+            <img src="teacher_4.jpg" alt="Вчитель 4">
+            <div class="teacher-info">
+                <p>Вік: 37</p>
+                <p>Досвід роботи: 9 років</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Заисатися на урок</h3>
+            <form id="contactForm">
+                <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
+                <div class="submit-arrow" onclick="submitForm()">
+                    <img src="arrow.png" alt="Відправити">
+                </div>
+            </form>
+            <h1></h1>
+        </div>
+
+        <div class="teacher">
+            <img src="teacher_5.jpg" alt="Вчитель 5">
+            <div class="teacher-info">
+                <p>Вік: 43</p>
+                <p>Досвід роботи: 11 років</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Заисатися на урок</h3>
+            <form id="contactForm">
+                <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
+                <div class="submit-arrow" onclick="submitForm()">
+                    <img src="arrow.png" alt="Відправити">
+                </div>
+            </form>
+            <h1></h1>
+        </div>
+
+        <div class="teacher">
+            <img src="teacher_6.jpg" alt="Вчитель 6">
+            <div class="teacher-info">
+                <p>Вік: 55</p>
+                <p>Досвід роботи: 20 років</p>
+            </div>
+        </div>
+
+        <!-- Форма для залишення номера -->
+        <div class="contact-form">
+            <h3>Заисатися на урок</h3>
+        <form id="contactForm">
+            <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
+            <div class="submit-arrow" onclick="submitForm()">
+                <img src="arrow.png" alt="Відправити">
+            </div>
+        </form>
+            <h1></h1>
+    </div>
+        <div class="footer">
+            <img src="small_logo.png" alt="FYT" title="FYT - Find Your Teacher">
+            &copy; 2023 All rights reserved. | <a href="privacy_policy.html">Політика конфіденційності</a>
+        </div>
+    </div>
+    <!-- ... Залиште решту змісту незмінним ... -->
+
+    <script>
+        // JavaScript-код тут (якщо потрібно)
+        const contactForm = document.getElementById("contactForm");
+        contactForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const phoneNumber = contactForm.phone.value;
+            // Тут ви можете додати код для взаємодії з сервером або збереження номера телефону
+            console.log("Номер телефону: " + phoneNumber);
+        });
+    </script>
+</div>
+
+</body>
+
+</html>
