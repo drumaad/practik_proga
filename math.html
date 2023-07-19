@@ -27,7 +27,8 @@
         }
 
         header {
-            background-color: #f1f1f1; /* Сірий колір для головної частини */
+            background-color: #b4a9a9;
+
             text-align: center;
             padding: 20px;
             color: #555; /* Колір тексту */
@@ -71,16 +72,16 @@
 
         .footer {
             background-color: #ddd;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
             font-size: 12px;
             color: #555;
         }
 
         .footer img {
-            max-height: 30px;
+              max-height: 30px;
             vertical-align: middle;
-            margin-right: 5px;
+            margin-right: 20px;
         }
 
         .back-link {
@@ -98,11 +99,18 @@
         .back-link:hover {
             color: #333;
         }
+        .teacher-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .teacher {
+            flex: 0 0 200px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 20px;
+            margin: 20px;
         }
 
         .teacher img {
@@ -114,20 +122,8 @@
             margin-top: 10px;
             text-align: center;
             color: #ffffff;
-
         }
 
-        .contact-form {
-            margin-top: 20px;
-            text-align: center;
-            color: #ffffff;
-
-        }
-
-        .contact-form input[type="tel"] {
-            padding: 5px;
-            width: 200px;
-        }
         .contact-form {
             margin-top: 20px;
             text-align: center;
@@ -141,10 +137,14 @@
             border: 2px solid #817b7b;
             border-radius: 5px;
             outline: none;
+            background-color: #b4a9a9;
+
         }
 
         .contact-form input[type="tel"]:focus {
             border-color: #777;
+
+
         }
 
         .submit-arrow {
@@ -152,6 +152,7 @@
             display: inline-block;
             margin-left: -5px;
         }
+
 
         .submit-arrow img {
             max-width: 20px;
@@ -168,7 +169,7 @@
     <div class="service-text">Репетитори з математики</div>
 </header>
 <div class="content">
-    <!-- Вміст сторінки, як у попередньому прикладі -->
+
     <div class="content">
         <!-- Фотографії та інформація вчителів -->
         <div class="teacher">
@@ -180,6 +181,8 @@
 
             <img src="teacher_1.jpg" alt="Вчитель 1">
             <div class="teacher-info">
+                <p>Маруся</p>
+
                 <p>Вік: 35</p>
                 <p>Досвід роботи: 10 років</p>
             </div>
@@ -197,6 +200,8 @@
         <div class="teacher">
             <img src="teacher_2.jpg" alt="Вчитель 2">
             <div class="teacher-info">
+                <p>Світлана</p>
+
                 <p>Вік: 40</p>
                 <p>Досвід роботи: 15 років</p>
             </div>
@@ -216,13 +221,15 @@
         <div class="teacher">
             <img src="teacher_3.jpg" alt="Вчитель 3">
             <div class="teacher-info">
+                <p>Валентина</p>
+
                 <p>Вік: 41</p>
                 <p>Досвід роботи: 11 років</p>
             </div>
         </div>
 
         <div class="contact-form">
-            <h3>Заисатися на урок</h3>
+            <h3>Записатися на урок</h3>
             <form id="contactForm">
                 <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
                 <div class="submit-arrow" onclick="submitForm()">
@@ -235,13 +242,15 @@
         <div class="teacher">
             <img src="teacher_4.jpg" alt="Вчитель 4">
             <div class="teacher-info">
+                <p>Васелиса</p>
+
                 <p>Вік: 37</p>
                 <p>Досвід роботи: 9 років</p>
             </div>
         </div>
 
         <div class="contact-form">
-            <h3>Заисатися на урок</h3>
+            <h3>Записатися на урок</h3>
             <form id="contactForm">
                 <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
                 <div class="submit-arrow" onclick="submitForm()">
@@ -254,13 +263,14 @@
         <div class="teacher">
             <img src="teacher_5.jpg" alt="Вчитель 5">
             <div class="teacher-info">
+                <p>Марина</p>
                 <p>Вік: 43</p>
                 <p>Досвід роботи: 11 років</p>
             </div>
         </div>
 
         <div class="contact-form">
-            <h3>Заисатися на урок</h3>
+            <h3>Записатися на урок</h3>
             <form id="contactForm">
                 <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
                 <div class="submit-arrow" onclick="submitForm()">
@@ -273,6 +283,7 @@
         <div class="teacher">
             <img src="teacher_6.jpg" alt="Вчитель 6">
             <div class="teacher-info">
+                <p>Катерина Володимирівна</p>
                 <p>Вік: 55</p>
                 <p>Досвід роботи: 20 років</p>
             </div>
@@ -280,7 +291,7 @@
 
         <!-- Форма для залишення номера -->
         <div class="contact-form">
-            <h3>Заисатися на урок</h3>
+            <h3>Записатися на урок</h3>
         <form id="contactForm">
             <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
             <div class="submit-arrow" onclick="submitForm()">
@@ -294,15 +305,15 @@
             &copy; 2023 All rights reserved. | <a href="privacy_policy.html">Політика конфіденційності</a>
         </div>
     </div>
-    <!-- ... Залиште решту змісту незмінним ... -->
+
 
     <script>
-        // JavaScript-код тут (якщо потрібно)
+
         const contactForm = document.getElementById("contactForm");
         contactForm.addEventListener("submit", function(event) {
             event.preventDefault();
             const phoneNumber = contactForm.phone.value;
-            // Тут ви можете додати код для взаємодії з сервером або збереження номера телефону
+
             console.log("Номер телефону: " + phoneNumber);
         });
     </script>

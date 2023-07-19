@@ -1,20 +1,248 @@
-<!DOCTYPE html> <!-- початок html файлу -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FYT - English |</title> <!-- Назва -->
+    <title>FYT - English</title> <!-- Назва -->
     <link rel="icon" href="logo.png" type="image/png"> <!-- логотип -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b4a9a9;
+
+            color: #555;
+        }
+
+        .header {
+            background-color: #b4a9a9;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-height: 70px;
+        }
+
+        .header h1 {
+            margin: 5px 0;
+            font-size: 24px;
+        }
+
+        .service-text {
+            font-size: 14px;
+            font-style: italic;
+            color: #777;
+        }
+
+        .content {
+            background-color: #03141f;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .teacher-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .teacher {
+            flex: 0 0 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .teacher img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        .teacher-info {
+            margin-top: 10px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+            text-align: center;
+            color: #ffffff;
+
+        }
+
+        .contact-form input[type="tel"] {
+            padding: 5px;
+            width: 200px;
+            border: 2px solid #817b7b;
+            border-radius: 5px;
+            outline: none;
+            background-color: #b4a9a9;
+
+        }
+
+        .contact-form input[type="tel"]:focus {
+            border-color: #777;
+
+
+        }
+
+        .submit-arrow {
+            cursor: pointer;
+            display: inline-block;
+            margin-left: -5px;
+        }
+
+        .submit-arrow img {
+            max-width: 20px;
+        }
+
+        .footer {
+            background-color: #b4a9a9;
+
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .footer img {
+            max-height: 30px;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #555;
+            font-size: 18px;
+            font-weight: bold;
+            color: #777;
+        }
+
+        .back-link:hover {
+            color: #333;
+        }
+    </style>
 </head>
+
 <body>
-<!-- контент -->
-<h1> Англіська</h1>
-<h2>РЕПЕТИТОРИ З АНЛІСЬКОЇ</h2>
-<ul>
-    <li><a href="main.html">Main</a></li>
-    <!-- Додайте інші предмети як посилання -->
-</ul>
+<div class="header">
+    <a href="main.html" class="back-link">&larr; Повернутися на головну</a>
+    <img src="logo.png" alt="FYT - Find Your Teacher">
+    <h1>Англіська мова</h1>
+    <div class="service-text">Репетитори з англіської мови</div>
+</div>
+<div class="content">
+    <!-- Фотографії та інформація вчителів -->
+    <div class="teacher-container">
+        <div class="teacher">
+            <img src="teacher_2.1.jpg" alt="Вчитель 1">
+            <div class="teacher-info">
+                <p>Марина</p>
+
+                <p>Вік: 35</p>
+                <p>Досвід роботи: 10 років</p>
+            </div>
+            <div class="contact-form">
+                <h3>Записатися на урок</h3>
+                <form>
+                    <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
+                    <div class="submit-arrow" onclick="submitForm()">
+                        <img src="arrow.png" alt="Відправити">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="teacher">
+            <img src="teacher_2.2.jpg" alt="Вчитель 2">
+            <div class="teacher-info">
+                <p>Олена</p>
+
+                <p>Вік: 40</p>
+                <p>Досвід роботи: 15 років</p>
+            </div>
+            <div class="contact-form">
+                <h3>Записатися на урок</h3>
+                <form>
+                    <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
+                    <div class="submit-arrow" onclick="submitForm()">
+                        <img src="arrow.png" alt="Відправити">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="teacher">
+            <img src="teacher_2.4.jpg" alt="Вчитель 4">
+            <div class="teacher-info">
+                <p>Яніна</p>
+
+                <p>Вік: 37</p>
+                <p>Досвід роботи: 9 років</p>
+            </div>
+            <div class="contact-form">
+                <h3>Записатися на урок</h3>
+                <h1></h1>
+                <form>
+                    <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
+                    <div class="submit-arrow" onclick="submitForm()">
+                        <img src="arrow.png" alt="Відправити">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="teacher">
+            <img src="teacher_2.5.jpg" alt="Вчитель 5">
+            <div class="teacher-info">
+                <p>Наташа</p>
+
+                <p>Вік: 43</p>
+                <p>Досвід роботи: 11 років</p>
+            </div>
+            <div class="contact-form">
+                <h3>Записатися на урок</h3>
+                <form id="contactForm">
+                    <input type="tel" name="phone" placeholder="Ваш номер телефону" required>
+                    <div class="submit-arrow" onclick="submitForm()">
+                        <img src="arrow.png" alt="Відправити">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <!-- Додайте інші фотографії та інформацію про вчителів, якщо потрібно -->
+
+    </div>
+</div>
+
+<div class="footer">
+    <img src="small_logo.png" alt="FYT" title="FYT - Find Your Teacher">
+    &copy; 2023 All rights reserved. | <a href="privacy_policy.html">Політика конфіденційності</a>
+</div>
+
+<script>
+    // JavaScript-код тут (якщо потрібно)
+    function submitForm() {
+        const contactForm = document.querySelector(".contact-form form");
+        const phoneNumber = contactForm.phone.value;
+        console.log("Номер телефону: " + phoneNumber);
+        contactForm.reset(); // Очистити форму після відправки
+    }
+</script>
 </body>
 
 </html>
