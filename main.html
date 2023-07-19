@@ -9,52 +9,109 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #565050;
             margin: 0;
             padding: 0;
         }
+        .employee-of-the-month {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* Змістіть інші стилі для блока .employee-of-the-month за своїми потребами */
+        }
 
+        .text-container {
+            background-color: #b4a9a9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .text-container h2 {
+            margin: 0;
+        }
+
+        .teacher {
+            flex: 0 0 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .teacher img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
         header {
-            background-color: #4285F4;
-            color: #fff;
+            background-color: #b4a9a9;
+            color: #000000;
             padding: 20px;
             text-align: center;
         }
 
         h1 {
             margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .column {
+            flex: 1;
+            max-width: 300px; /* Ширина колонки */
+            margin: 20px;
+            padding: 10px;
+            background-color: #857d7d;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         ul {
             list-style: none;
             padding: 0;
-            margin: 20px 0;
+            margin: 0;
         }
 
         li {
             margin: 10px;
         }
 
+
         li a {
-            display: block;
-            padding: 10px;
-            background-color: #4285F4;
-            color: #fff;
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #b4a9a9;
+
+
+            color: #333; /* Змінено колір тексту на темно-сірий */
             text-decoration: none;
-            border-radius: 5px;
+            border: 1px solid #000000; /* Змінено колір рамки на світло-сірий */
+            border-radius: 5px; 
             transition: background-color 0.2s ease;
+            font-size: 18px;
         }
 
         li a:hover {
-            background-color: #3367D6;
+            background-color: #C0C0C0; /* Змінено колір при наведенні на темно-сірий */
+
         }
 
         .footer {
-            background-color: #ddd;
+            background-color: #b4a9a9;
             padding: 10px;
             text-align: center;
             font-size: 12px;
             color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .footer img {
@@ -62,23 +119,114 @@
             vertical-align: middle;
             margin-right: 5px;
         }
+
+
+
+        .promotional-text span {
+            font-weight: bold;
+            color: #4285F4; 
+        }
+
+        .company-column {
+            flex-basis: 100%;
+            text-align: center;
+            padding: 20px;
+
+            border: 2px solid #b4a9a9; /* Рамка з коліром світло-сірого посилання */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тінь для рамки */
+        }
+
+        .company-column h2 {
+            font-size: 24px;
+        }
+
+        /* Доданий стиль для заголовків колонок */
+        .column h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .text {
+            display: flex;
+        }
+
     </style>
 </head>
 
 <body>
 <header>
-    <h1>FYT - Find Your Teacher</h1>
+
+    <img src="logo.png" alt="FYT" title="FYT - Find Your Teacher">
 </header>
-<ul>
-    <li><a href="math.html">Математика</a></li>
-    <li><a href="ua_lang.html">Українська</a></li>
-    <li><a href="english.html">Англіська</a></li>
-    <li><a href="history.html">Історія</a></li>
-</ul>
+<div class="container">
+    <div class="column">
+        <h2>Математика</h2>
+        <p>Тут ви можете знайти репетитора з математики. Математика - це наука про структури, порядок і простір.</p>
+        <ul>
+            <li><a href="math.html">Репетитори</a></li>
+        </ul>
+    </div>
+    <div class="column">
+        <h2>Українська мова</h2>
+        <p>Звідси ви можете знайти репетитора з української мови. Вивчайте рідну мову, щоб вдосконалити свої знання.</p>
+        <ul>
+            <li><a href="ua_lang.html">Репетитори</a></li>
+        </ul>
+    </div>
+    <div class="column">
+        <h2>Англійська мова</h2>
+        <p>Тут ви можете знайти репетитора з англійської мови. Вивчайте англійську для спілкування та кар'єри.</p>
+        <ul>
+            <li><a href="english.html">Репетитори</a></li>
+        </ul>
+    </div>
+    <div class="column">
+        <h2>Історія</h2>
+        <p>Тут ви можете знайти репетитора з історії. Вивчайте історію, щоб зрозуміти минуле та сформувати свій світогляд.</p>
+        <ul>
+            <li><a href="history.html">Репетитори</a></li>
+        </ul>
+    </div>
+    </div>
+
+
+<div class="employee-of-the-month">
+    <div class="text-container">
+        <h2>Працівник місяця</h2>
+    </div>
+    <div class="teacher">
+        <img src="teacher_3.6.jpg" alt="Вчитель 6">
+        <div class="teacher-info">
+            <p>Геннадій Дрисля</p>
+            <p>Вік: 55</p>
+            <p>Досвід роботи: 20 років</p>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+</body>
+
+</html>
+    <div class="company-column">
+        <h2>Наша компанія</h2>
+        <p>Ми - Find Your Teacher (FYT) - високопрофесійна компанія з надання репетиторських послуг. Наша мета полягає в наданні вам найкращих можливостей для вивчення різних предметів та мов.</p>
+        <p>Завдяки нашій команді кваліфікованих вчителів, ви отримуєте особистий підхід до навчання, індивідуальні уроки та наочне пояснення матеріалу.</p>
+        <p>Ми впевнені, що ви зможете знайти відповідного репетитора для ваших потреб і досягти успіху в навчанні.</p>
+        <p>Довірте своє навчання професіоналам - оберіть FYT для ваших освітніх потреб!</p>
+    </div>
+</div>
+  
+
+</div>
 <div class="footer">
     <img src="small_logo.png" alt="FYT" title="FYT - Find Your Teacher">
 </div>
-<div class="footer"> &copy; 2023 All rights reserved. | <a href="privacy_policy.html">Політика конфіденційності</a>
+<div class="footer">
+    &copy; 2023 All rights reserved. | <a href="privacy_policy.html" class="privacy-policy">Політика конфіденційності</a>
 </div>
 </body>
 
